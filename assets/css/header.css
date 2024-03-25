@@ -1,0 +1,68 @@
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.625rem;
+}
+
+header .header-information {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 3rem auto 3rem;
+    justify-items: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-information img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+}
+
+.header-information .contact-profile-information {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.contact-profile-information .contact-profile-name {
+    color: var(--font-default-color);
+    font-size: var(--heading-default-size);
+    font-weight: var(--heading-default-weight);
+}
+
+.contact-profile-information .contact-profile-state {
+    color: var(--state-color-online);
+    font-size: var(--p-default-size);
+    font-weight: var(--p-default-weight);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.contact-profile-information .contact-profile-state::before{
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 2rem;
+    
+    background-color: var(--state-color-online);
+}
+
+.header-information .close-chat-action{
+    justify-self: end;
+
+    color: var(--base-color-white);
+}
+
+header .chat-actual-time {
+    color: var(--font-default-color);
+    font-size: var(--p-default-size);
+    font-weight: var(--p-default-weight);
+}
+

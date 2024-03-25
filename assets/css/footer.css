@@ -1,0 +1,50 @@
+
+footer {
+    padding-top: var(--default-padding);
+
+    display: flex;
+    align-items: center;
+}
+
+footer label {
+    background-color: var(--secondary-color);
+    border-radius: 999rem;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: var(--min-padding) var(--default-padding);
+}
+
+footer label:focus-within {
+    outline: 2px solid var(--base-color-white);
+}
+
+footer label .message-input {
+    flex: 1;
+
+    outline: 0;
+    border: none;
+    background-color: transparent;
+}
+
+footer label .message-input,
+footer label .message-input::placeholder {
+    color: var(--font-default-color);
+    font-size: var(--p-default-size);
+    font-weight: var(--p-default-weight);
+}
+
+footer label .send-message-button {
+    border: none;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+}
+
+footer label .send-message-button .send-message-action {
+    color: var(--font-default-color);
+}

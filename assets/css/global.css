@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --primary-color: #1A1924;
+    --secondary-color: #282843;
+
+    --base-color-white: #fff;
+    --base-color-black: #000;
+    
+    --state-color-online: #00B37E;
+    --state-color-offline: ;
+    
+    --chat-balloon-default-color: #07847E;
+    --chat-baloon-complementary-color: #633BBC;
+
+    --bg-default-color: var(--primary-color);
+    --font-default-color: #E1E1E6;
+    
+
+    --heading-default-size: 1rem;
+    --heading-default-weight: 700;
+    
+    --subheading-default-size: ;
+    --subheading-default-weight: ;
+    
+    --p-default-size: 0.75rem;
+    --p-default-weight: 400;
+
+
+    --section-external-default-spacing: 1.875rem;
+    --section-internal-default-spacing: 0.625rem;
+
+    --min-padding: 0.875rem;
+    --default-padding: 1.5rem;
+    --large-padding: 2rem;
+    --max-padding: 4.5rem;
+}
+
+.material-icons-round {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+} 
+
+body {
+    background-color: var(--primary-color);
+}
+
+.app-container {
+    height: 100vh;
+    padding: var(--default-padding) var(--large-padding);
+    display: grid;
+    gap: var(--section-external-default-spacing);
+    grid-template-rows: auto 1fr auto;
+}
+
+@media only screen and (min-width: 1024px) {
+    .app-container {
+        padding: var(--large-padding) var(--max-padding);
+    }
+}

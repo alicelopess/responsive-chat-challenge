@@ -1,0 +1,51 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-external-default-spacing);
+
+    overflow-y: scroll;
+}
+
+main .message-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+main .message-container.internal {
+    align-items: flex-end;
+}
+
+main .message-container.external {
+    align-items: flex-start;
+}
+
+main .message-container p {
+    width: auto;
+    max-width: 50%;
+
+    color: var(--font-default-color);
+    font-size: var(--p-default-size);
+    font-weight: var(--p-default-weight);
+}
+
+main .message-container.internal .message-details {
+    text-align: end;
+}
+
+main .message-container .message-baloon {
+    padding: var(--min-padding);
+}
+
+main .message-container.internal .message-baloon {
+    background-color: var(--chat-balloon-default-color);
+    border-radius: 0.5rem 0.5rem 0 0.5rem;
+}
+
+main .message-container.external .message-baloon {
+    background-color: var(--chat-baloon-complementary-color);
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+} 
